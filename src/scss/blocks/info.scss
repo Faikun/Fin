@@ -1,0 +1,129 @@
+.info {
+  padding: 160px 0;
+
+  @media (max-width: 992px) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+}
+
+.info__image {
+  margin-right: 55px;
+  &>img {
+    width: 460px;
+    height: 530px;
+    border-radius: 114px;
+    object-fit: cover;
+
+    @media (max-width: 1200px) {
+      margin: 0 auto 50px;
+      width: 100%;
+      display: block;
+    }
+
+    @media (max-width: 992px) {
+      height: 350px;
+    }
+
+    @media (max-width: 768px) {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.info__title {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-family: 'Komika', sans-serif;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.info__text {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: -50px;
+  &>p {
+    margin-bottom: 50px;
+
+    &.bold {
+      font-weight: 600;
+      color: $grey;
+    }
+  }
+
+  &.second {
+    margin-bottom: 0;
+    margin-right: 50px;
+
+    @media (max-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+}
+
+.info__download {
+  width: 100%;
+  border: 3px dashed $lightBrown;
+  border-radius: 30px;
+  padding: 40px 20%;
+
+  display: flex;
+  align-items: center;
+
+  transition: transform .2s linear;
+  cursor: pointer;
+
+  &-text {
+    font-size: 1.5em;
+    font-family: 'Komika', sans-serif;
+    margin-right: 45px;
+
+    @media (max-width: 768px) {
+      font-size: 1.2em;
+      margin-right: 25px;
+    }
+  }
+
+  &-icon {
+    width: 64px;
+    height: 64px;
+
+    @media (max-width: 768px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    color: lighten($darkBrown, 10%);
+  }
+
+  @media (max-width: 1200px) {
+    padding: 40px 15%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 10%;
+  }
+}

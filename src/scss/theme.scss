@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Komika';
+  src: url('../fonts/komikatitle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@import "vendor/reset";
+@import "vars";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: $darkBrown;
+  line-height: 1.5;
+}
+
+a  {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Blocks */
+@import "../scss/blocks/container";
+@import "../scss/blocks/header";
+@import "../scss/blocks/nav";
+@import "../scss/blocks/burger";
+@import "../scss/blocks/info";
+@import "../scss/blocks/path";
+@import "../scss/blocks/footer";
+@import "../scss/blocks/about";
+@import "../scss/blocks/map";
